@@ -1,3 +1,60 @@
-.ohioNav {
-    color: green;
+main {
+    height: 90rem;
+    background-color: grey;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+/* search*/
+
+/* search bar */
+ 
+.search-bar {
+    border: 2px solid red;
+    width: 370px;
+    height:50px;
+    background: rgb(31, 31, 31);
+    display:flex;
+    align-items: center;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    opacity: 0.8;
+  }
+  
+  .search-bar input {
+    background:transparent;
+    flex: 1;
+    border: 0;
+    outline:none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: white;
+    opacity: 0.8;
+  }
+ 
+  #main-search-button {
+    margin-top: 20px;
+  }
+
+#myUL {
+    margin-top: 6rem;
+}
+
+@media screen and (max-width: 930px) {
+    .search-bar {
+        border: 2px solid red;
+        width: 300px;
+        height:50px;
+        background: rgb(31, 31, 31);
+        display:flex;
+        align-items: center;
+        border-radius: 16px;
+        padding: 20px;
+        margin-top: 20px;
+        color: white;
+        opacity: 0.8;
+      }
+  }
