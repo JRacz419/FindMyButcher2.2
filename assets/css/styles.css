@@ -88,10 +88,14 @@ h1, h2, h3, h4 {
 
 ul {
   list-style: none;
+
 }
+
+
 
 a {
   text-decoration: none;
+  cursor: pointer; 
 }
 
 img {
