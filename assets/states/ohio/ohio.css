@@ -14,24 +14,16 @@ main {
 }
 
 
-.main-search-container {
-    background-color:black;
-    flex: 1;
-    width: 100%;
+/*******************************************************SEARCH*****************************************************/
+
+.search-container {
+    border: 1px solid greenyellow;
+    margin-top: 12em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 12em;
 
-   }
-
-   h2 {
-    width: 100%;
-    display: flex;
-   }
-
-/*******************************************************SEARCH*****************************************************/
-
+}
  
 .search-bar {
     border: 2px solid red;
@@ -42,7 +34,6 @@ main {
     align-items: center;
     border-radius: 16px;
     padding: 20px;
-    margin-top: 20px;
     color: white;
     opacity: 0.8;
   }
@@ -95,8 +86,8 @@ main {
     flex-direction: column;
     width: 100%;
     flex-wrap: wrap;
- 
     align-content: center;
+    gap: 10px;
 }
 
 #myUL li a {
@@ -142,9 +133,25 @@ main {
 
 .home__card-img {
     opacity: 0.7;
+    border-radius: 10px;
 }
 
 .icons {
     display: flex;
     flex-direction: row;
 }
+
+
+
+
+/*  <div class="main-search-container">
+
+            <h2>
+                Find Local<br><span class="red-meat-text">BUTCHERS</span><span>
+            </h2>
+                
+            <form action="#" methods="get" class="search-bar">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by City">
+            </form>
+
+        </div>                                         */
