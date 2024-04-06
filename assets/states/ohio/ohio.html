@@ -5,542 +5,360 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
         <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="../../img/armsCrossed.JPG" type="image/x-icon">
+        <link rel="shortcut icon" href="../../img/meatSpread.jpg" type="image/x-icon">
   
         <!--=============== REMIXICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../ohio/ohio.css">
-        <link rel="stylesheet" href="../../css/styles.css">
+        <link rel="stylesheet" href="../../../assets/css/styles.css">
+        <link rel="stylesheet" href="./ohio.css">
         <title>Find My Butcher</title>
     </head>
 
     <body>
-        
 
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">FIND MY BUTCHER</a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Find a Butcher</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">Cuts</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#popular" class="nav__link">Learn</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#explore" class="nav__link">Explore</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#explore" class="nav__link">Signup</a>
-                        </li>
-                    </ul>
-                    <!-- Close button -->
-                    <div class="nav__close" id="nav-close">
-                        <i class="ri-close-line"></i>
-                    </div>
-                </div>
-                <!-- Toggle button -->
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-line"></i>
-                </div>
-            </nav>
-        </header>
+        <!--==================== HEADER/NAV ====================-->
+      <header class="header" id="header">
+        <nav class="nav container">
+           <a href="#" class="nav__logo">FIND MY BUTCHER</a>
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">Find a Butcher</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="#about" class="nav__link">Cuts</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="#popular" class="nav__link">Learn</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="#explore" class="nav__link">Explore</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="#explore" class="nav__link">Signup</a>
+                 </li>
+              </ul>
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+           <!-- Toggle button -->
+           <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line"></i>
+           </div>
+        </nav>
+     </header>
 
-   <!-- Search Bar -->
-        <div class="search-container">
-            <form action="#" methods="get" class="search-bar">
-                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by City">
-            </form>
-        </div>
-        
-       
-        <main>
-        
-            <section class="main-directory-container">
-        
-                    <ul id="myUL">
+
+
+   
+
+      <ul id="myUL">
                        
-                            <li><a href="#">Akron</a>
+         <li><a href="#">Akron</a>
+            <div class="cardsFlex">
+               <article class="home__card">
+               <img src="./img/butcher-shop-cartoon.jpg" alt="al's quality meat image of building" class="home__card-img">    
+               <h3 class="home__card-title">
+                  <div class="cityName">Akron</div>
+                  <div class="business">
+                     Al's Quality Meats
+                  </div>
+                  <div class="icons">
+                     <a href="http://maps.google.com/?q=155 2nd St NW, Barberton, OH 44203" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
+                     <a href="tel:3307537216"><img src="./img/phone_icon.png" class="phone_icon"></a>
+                  </div>
+               </h3>
+               </article>
+            </div>
+         </li>
 
-                                <div class="home__cards grid">
-
-                                    <article class="home__card">
-                                        <img src="./img/butcher-shop-cartoon.jpg" alt="al's quality meat image of building" class="home__card-img">    
-                                        <h3 class="home__card-title">
-                                            <div class="business">
-                                                Al's Quality Meats
-                                            </div>
-                                            <div class="icons">
-                                                <a href="http://maps.google.com/?q=155 2nd St NW, Barberton, OH 44203" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
-                                                <a href="tel:3307537216"><img src="./img/phone_icon.png" class="phone_icon"></a>
-                                            </div>
-                                        </h3>
-                                    </article>
-
-                                    <article class="home__card">
-                                        <img src="./img/farmers-rail.jpg" alt="the farmers rail image of outside building" class="home__card-img">    
-                                        <h3 class="home__card-title">
-                                            <div class="business">
-                                                The Farmer's Rail
-                                            </div>
-                                            <div class="icons">
-                                                <a href="http://maps.google.com/?q=1572 N Cleveland Massillon Rd, Akron, OH 44333
-                                                " target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
-                                                <a href="tel:3305763333"><img src="./img/phone_icon.png" class="phone_icon"></a>
-                                            </div>
-                                        </h3>
-                                    </article>
-
-                                    <article class="home__card">
-                                        <img src="./img/presslersMeat.jpg" alt="presslermeats image of outside building." class="home__card-img">    
-                                        <h3 class="home__card-title">
-                                            <div class="business">
-                                                Pressler's Meat
-                                            </div>
-                                            <div class="icons">
-                                                <a href="http://maps.google.com/?q=2553 Pressler Rd, Akron, OH 44312" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
-                                                <a href="tel:3306445636"><img src="./img/phone_icon.png" class="phone_icon"></a>
-                                            </div>
-                                        </h3>
-                                    </article>
-
-                                    <article class="home__card">
-                                        <img src="./img/showcaseMeats.jpg" alt="image of showcase meats outside building" class="home__card-img">    
-                                        <h3 class="home__card-title">
-                                            <div class="business">
-                                                Showcase Meats
-                                            </div>
-                                            <div class="icons">
-                                                <a href="http://maps.google.com/?q=2355 Manchester Rd, Akron, OH 44314" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
-                                                <a href="tel:3307534219"><img src="./img/phone_icon.png" class="phone_icon"></a>
-                                            </div>
-                                        </h3>
-                                    </article>
-
-                                   
-                                 
-                                </div>
-                                
-                            </li>
-
-                            <li><a href="#">Amherst</a>
-                                <div class="home__cards grid">
-
-                                    <article class="home__card">
-                                        <img src="./img/polansky.jpg" alt="steve polansky outside building" class="home__card-img">    
-                                        <h3 class="home__card-title">
-                                            <div class="business">
-                                                Steve Polansky Market
-                                            </div>
-                                            <div class="icons">
-                                                <a href="http://maps.google.com/?q=6703 S Dewey Rd, Amherst, OH 44001" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
-                                                <a href="tel:4409882617"><img src="./img/phone_icon.png" class="phone_icon"></a>
-                                            </div>
-                                        </h3>
-                                    </article>
-
-                                </div>
-                            </li>
-
-                            <li><a href="#">Archbold</a>
-
-                                <div class="home__cards grid">
-
-                                    <article class="home__card">
-                                        <img src="./img/brookview.jpg" alt="brookview outside building" class="home__card-img">    
-                                        <h3 class="home__card-title">
-                                            <div class="business">
-                                                Brookview Farm Meats
-                                            </div>
-                                            <div class="icons">
-                                                <a href="http://maps.google.com/?q=V-354 Co Rd 24, Archbold, OH 43502" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
-                                                <a href="tel:4194456366"><img src="./img/phone_icon.png" class="phone_icon"></a>
-                                            </div>
-                                        </h3>
-                                    </article>
-
-                                    <article class="home__card">
-                                        <img src="./img/butcher-shop-cartoon.jpg" alt="brookview outside building" class="home__card-img">    
-                                        <h3 class="home__card-title">
-                                            <div class="business">
-                                                Myers Slaughter House
-                                            </div>
-                                            <div class="icons">
-                                                <a href="http://maps.google.com/?q=21905 Co Rd C, Archbold, OH 43502" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
-                                                <a href="tel:4194454436"><img src="./img/phone_icon.png" class="phone_icon"></a>
-                                            </div>
-                                        </h3>
-                                    </article>
-                                </div>
-                            </li>
-
-                            <li><a href="#">Ashland</a>
-                                <div class="home__cards grid">
-
-                                    <article class="home__card">
-                                        <img src="./img/gerwigs.jpg" alt="gerwigs outside building" class="home__card-img">    
-                                        <h3 class="home__card-title">
-                                            <div class="business">
-                                                Gerwig's White Barn
-                                            </div>
-                                            <div class="icons">
-                                                <a href="http://maps.google.com/?q= 853 Township Rd 1102, Ashland, OH 44805" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
-                                                <a href="tel:4192899576"><img src="./img/phone_icon.png" class="phone_icon"></a>
-                                            </div>
-                                        </h3>
-                                    </article>
-
-                                    <article class="home__card">
-                                        <img src="./img/heffelfingers.png" alt="Heffelfinger's outside building" class="home__card-img">    
-                                        <h3 class="home__card-title">
-                                            <div class="business">
-                                                Heffelfinger's Meat Market
-                                            </div>
-                                            <div class="icons">
-                                                <a href="http://maps.google.com/?q=1110 Commerce Parkway, Ashland, OH 44805" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
-                                                <a href="tel:4194960988"><img src="./img/phone_icon.png" class="phone_icon"></a>
-                                            </div>
-                                        </h3>
-                                    </article>
-
-                                    <article class="home__card">
-                                        <img src="./img/turk.jpg" alt="Heffelfinger's outside building" class="home__card-img">    
-                                        <h3 class="home__card-title">
-                                            <div class="business">
-                                                Turk Brothers Custom Meats Inc
-                                            </div>
-                                            <div class="icons">
-                                                <a href="http://maps.google.com/?q=1903 Orange Rd, Ashland, OH 44805" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
-                                                <a href="tel:4192891051"><img src="./img/phone_icon.png" class="phone_icon"></a>
-                                            </div>
-                                        </h3>
-                                    </article>
-                                </div>
-
-                            </li>
-
-                            <li><a href="#">Athens</a>
-
-                                <div class="home__cards grid">
-
-                                    <article class="home__card">
-                                        <img src="./img/theLocalButcher.jpg" alt="the local butcher outside building" class="home__card-img">    
-                                        <h3 class="home__card-title">
-                                            <div class="business">
-                                                The Local Butcher LLC
-                                            </div>
-                                            <div class="icons">
-                                                <a href="http://maps.google.com/?q=2865 Pleasant Hill Rd, Athens, OH 45701" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
-                                                <a href="tel:7405419995"><img src="./img/phone_icon.png" class="phone_icon"></a>
-                                            </div>
-                                        </h3>
-\                                    </article>
-
-                                </div>
-                            </li>
-
-                            <li><a href="#">Aurora</a>
-                                <div class="home__cards grid">
-
-                                    <article class="home__card">
-                                        <img src="./img/heinens.jpg" alt="Heinen's outside building" class="home__card-img">    
-                                        <h3 class="home__card-title">
-                                            <div class="business">
-                                                Heinen's Grocery Store
-                                            </div>
-                                            <div class="icons">
-                                                <a href="http://maps.google.com/?q=115 N Chillicothe Rd, Aurora, OH 44202" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
-                                                <a href="tel:3305625297"><img src="./img/phone_icon.png" class="phone_icon"></a>
-                                            </div>
-                                        </h3>
-                                    </article>
-
-                                    <article class="home__card">
-                                        <img src="./img/mazzulos.jpg" alt="mazzulos outside building" class="home__card-img">    
-                                        <h3 class="home__card-title">
-                                            <div class="business">
-                                                Mazzulo's Market
-                                            </div>
-                                            <div class="icons">
-                                                <a href="http://maps.google.com/?q=302 Aurora Commons Cir, Aurora, OH 44202" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
-                                                <a href="tel:3305623200"><img src="./img/phone_icon.png" class="phone_icon"></a>
-                                            </div>
-                                        </h3>
-                                    </article>
-                                </div>
-                            </li>
-
-                            <li><a href="#">Barberton</a>
-                                <div class="home__cards grid">
-
-                                    <article class="home__card">
-                                        <img src="./img/alsQualityMeats.jpg" alt="Heinen's outside building" class="home__card-img">    
-                                        <h3 class="home__card-title">
-                                            <div class="business">
-                                                Al's Quality Market
-                                            </div>
-                                            <div class="icons">
-                                                <a href="http://maps.google.com/?q=155 2nd St NW, Barberton, OH 44203" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
-                                                <a href="tel:3307537216"><img src="./img/phone_icon.png" class="phone_icon"></a>
-                                            </div>
-                                        </h3>
-                                    </article>
-
-                                    <article class="home__card">
-                                        <img src="./img/shermans.jpg" alt="mazzulo's outside building" class="home__card-img">    
-                                        <h3 class="home__card-title">
-                                            <div class="business">
-                                                Sherman Provision
-                                            </div>
-                                            <div class="icons">
-                                                <a href="http://maps.google.com/?q=3998 Johnson Rd, Barberton, OH 44203" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
-                                                <a href="tel:3308252711"><img src="./img/phone_icon.png" class="phone_icon"></a>
-                                            </div>
-                                        </h3>
-                                    </article>
-                                </div>
-                            </li>
-
-                            <li><a href="#">Belpre</a>
-                                <div class="home__cards grid">
-                                    <article class="home__card">
-                                        <img src="./img/butcher-shop-cartoon.jpg" alt="Cartoon outside building" class="home__card-img">    
-                                        <h3 class="home__card-title">
-                                            <div class="business">
-                                                740 Meats and More
-                                            </div>
-                                            <div class="icons">
-                                                <a href="http://maps.google.com/?q=1008 Campus Dr, Belpre, OH 45714" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
-                                                <a href="tel:3044887019"><img src="./img/phone_icon.png" class="phone_icon"></a>
-                                            </div>
-                                        </h3>
-                                    </article>
-                                </div>
-                            </li>
-
-                            <li><a href="#">Bowling Green</a>
-                                <div class="home__cards grid">
-                                    <article class="home__card">
-                                        <img src="./img/bellevilleMarket.jpg" alt="Belleville Market outside building" class="home__card-img">    
-                                        <h3 class="home__card-title">
-                                            <div class="business">
-                                                Belleville Brothers Market
-                                            </div>
-                                            <div class="icons">
-                                                <a href="http://maps.google.com/?q=239 S Main St, Bowling Green, OH 43402" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
-                                                <a href="tel:4193521126"><img src="./img/phone_icon.png" class="phone_icon"></a>
-                                            </div>
-                                        </h3>
-                                    </article>
-                                </div>
-                            </li>
-
-                        <li><a href="#">Brunswick</a></li>
-                        <li><a href="#">Bucyrus</a></li>
-                        <li><a href="#">Cambridge</a></li>
-                        <li><a href="#">Canton</a></li>
-                        <li><a href="#">Celina</a></li>
-                        <li><a href="#">Centerville</a></li>
-                        <li><a href="#">Cheviot</a></li>
-                        <li><a href="#">Chillicothe</a></li>
-                        <li><a href="#">Cincinnati</a></li>
-                        <li><a href="#">Circleville</a></li>
-                        <li><a href="#">Clayton</a></li>
-                        <li><a href="#">Cleveland</a></li>
-                      
-                    
-              
-        
-              
+         <li><a href="#">Akron</a>
+            <div class="cardsFlex">
+               <article class="home__card">
                   
-        
-                     
-                          
-                          <li><a href="#">Columbus</a>
-                          <li><a href="#">Conneaut</a></li>
-                          <li><a href="#">Cortland</a></li>
-                          <li><a href="#">Cuyahoga Falls</a></li>
-                          <li><a href="#">Dayton</a></li>
-                          <li><a href="#">Defiance</a></li>
-                          <li><a href="#">Delphos</a></li>
-                          <li><a href="#">Dover</a></li>
-                          <li><a href="#">Dublin</a></li>
-                          <li><a href="#">East Liverpool</a></li>
-                          <li><a href="#">Eastlake</a></li>
-                          <li><a href="#">Elyria</a></li>
-                          <li><a href="#">Euclid</a></li>
-                          
-                     
-                 
-        
-                      
-                          
-                        <li><a href="#">Fairborn</a>
-                        <li><a href="#">Fairfield</a></li>
-                        <li><a href="#">Fairfield Beach</a></li>
-                        <li><a href="#">Findlay</a></li>
-                        <li><a href="#">Finneytown</a></li>
-                        <li><a href="#">Forrest Park</a></li>
-                        <li><a href="#">Franklin</a></li>
-                        <li><a href="#">Fremont</a></li>
-                        <li><a href="#">Gallipolis</a</li>
-                        <li><a href="#">Gahanna</a></li>
-                        <li><a href="#">Green</a></li>
+                  <img src="./img/farmers-rail.jpg" alt="the farmers rail image of outside building" class="home__card-img">    
+                  <h3 class="home__card-title">
+                     <div class="cityName">Akron</div>
+                      <div class="business">
+                          The Farmer's Rail
+                      </div>
+                      <div class="icons">
+                          <a href="http://maps.google.com/?q=1572 N Cleveland Massillon Rd, Akron, OH 44333
+                          " target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
+                          <a href="tel:3305763333"><img src="./img/phone_icon.png" class="phone_icon"></a>
+                      </div>
+                  </h3>
+              </article>
+            </div>
+         </li>
 
-                        <li><a href="#">Greenville</a>
-                        <li><a href="#">Grove City</a></li>
-                        <li><a href="#">Graveport</a></li>
-                        <li><a href="#">Hamilton</a></li>
-                        <li><a href="#">Harrison</a></li>
-                        <li><a href="#">Heth</a></li>
-                        <li><a href="#">Hilliard</a></li>
-                        <li><a href="#">Hudson</a></li>
-                        <li><a href="#">Huber Height</a></li>
-                        <li><a href="#">Independence</a></li>
-                        <li><a href="#">Ironton</a></li>
-                        <li><a href="#">Jackson</a></li>
-                        <li><a href="#">Kent</a></li>
-
-
-
-                        <li><a href="#">Kettering</a>
-                        <li><a href="#">Lakewood</a></li>
-                        <li><a href="#">Lancaster</a></li>
-                        <li><a href="#">Lima</a></li>
-                        <li><a href="#">Logan</a></li>
-                        <li><a href="#">London</a></li>
-                        <li><a href="#">Lorain</a></li>
-                        <li><a href="#">Loveland</a></li>
-                        <li><a href="#">Macedonia</a></li>
-                        <li><a href="#">Madeira</a></li>
-                        <li><a href="#">Mansfield</a></li>
-                        <li><a href="#">Marion</a></li>
-                        <li><a href="#">Marietta</a></li>
-
-
-                        <li><a href="#">Massillon</a>
-                        <li><a href="#">Maumee</a></li>
-                        <li><a href="#">Mentor</a></li>
-                        <li><a href="#">Middletown</a></li>
-                        <li><a href="#">Monroe</a></li>
-                        <li><a href="#">Napolean</a>
-                            <div class="home__cards grid">
-
-                                <article class="home__card">
-                                    <img src="./img/pettisville.jpg" alt="pettisville outside building" class="home__card-img">    
-                                    <h3 class="home__card-title">
-                                        <div class="business">
-                                            Pettisville Meats Inc.
-                                        </div>
-                                        <div class="icons">
-                                            <a href="http://maps.google.com/?q=382 Co Rd 19, Pettisville, OH 43553" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
-                                            <a href="tel:4194450921"><img src="./img/phone_icon.png" class="phone_icon"></a>
-                                        </div>
-                                    </h3>
-                                </article>
-
-
-                            </div>
-                        </li>
-                        <li><a href="#">Newark</a></li>
-                        <li><a href="#">North Olmsted</a></li>
-                        <li><a href="#">North Ridgeville</a></li>
-                        <li><a href="#">North Royalton</a></li>
-                        <li><a href="#">Oberlin</a></li>
-                        <li><a href="#">Oregon</a></li>
-                        <li><a href="#">Oxford</a></li>
-
-                        <li><a href="#">Parma</a>
-
-                            <div class="home__cards grid">
-                                <article class="home__card">
-                                    <img src="./img/dionnes.jpg" alt="Dionne's outside building" class="home__card-img">    
-                                    <h3 class="home__card-title">
-                                        <div class="business">
-                                            Dionne's Meat Shop
-                                        </div>
-                                        <div class="icons">
-                                            <a href="http://maps.google.com/?q=10395 W Pleasant Valley Rd, Parma, OH 44130" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
-                                            <a href="tel:4408421330"><img src="./img/phone_icon.png" class="phone_icon"></a>
-                                        </div>
-                                    </h3>
-                                </article>
-                            </div>
-
-                           
-
-
-
-                            
-
-
-                        </li>
-
-                        <li><a href="#">Pemberville</a></li>
-                        <li><a href="#">Portsmouth</a></li>
-
-                        <li><a href="#">Reynoldsburg</a>
-                        <li><a href="#">Sandusky</a></li>
-                        <li><a href="#">Salon</a></li>
-                        <li><a href="#">Springfield</a></li>
-                        <li><a href="#">Stow</a></li>
-                        <li><a href="#">Strongsville</a></li>
-                        <li><a href="#">Sylvania</a></li>
-                        <li><a href="#">Toledo</a></li>
-                        <li><a href="#">Trenton</a></li>
-                        <li><a href="#">Troy</a></li>
-                        <li><a href="#">Warren</a></li>
-                        <li><a href="#">Wellington</a></li>
-                        <li><a href="#">West Lake</a></li>
-                        <li><a href="#">Willoughby</a></li>
-                        
-
-                        <li><a href="#">Wooster</a></li>
-                        <li><a href="#">Xenia</a></li>
-                        <li><a href="#">Youngstown</a></li>
-                        <li><a href="#">Zanesville</a></li>
-
-
-
-                      
-                          
-                    </ul>
-            
+         <li><a href="#">Akron</a>
+            <div class="cardsFlex">
+               <article class="home__card">
                   
+                  <img src="./img/presslersMeat.jpg" alt="presslermeats image of outside building." class="home__card-img">    
+                  <h3 class="home__card-title">
+                     <div class="cityName">Akron</div>
+                      <div class="business">
+                          Pressler's Meat
+                      </div>
+                      <div class="icons">
+                          <a href="http://maps.google.com/?q=2553 Pressler Rd, Akron, OH 44312" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
+                          <a href="tel:3306445636"><img src="./img/phone_icon.png" class="phone_icon"></a>
+                      </div>
+                  </h3>
+              </article>
+            </div>
+         </li>
+
+         <li><a href="#">Akron</a>
+            <div class="cardsFlex">
+               <article class="home__card">
+                  
+                  <img src="./img/showcaseMeats.jpg" alt="image of showcase meats outside building" class="home__card-img">    
+                  <h3 class="home__card-title">
+                     <div class="cityName">Akron</div>
+                      <div class="business">
+                          Showcase Meats
+                      </div>
+                      <div class="icons">
+                          <a href="http://maps.google.com/?q=2355 Manchester Rd, Akron, OH 44314" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
+                          <a href="tel:3307534219"><img src="./img/phone_icon.png" class="phone_icon"></a>
+                      </div>
+                  </h3>
+              </article>
+            </div>
+         </li>
+
+         <li><a href="#">Amherst</a>
+            <div class="cardsFlex">
+               <article class="home__card">
+                  
+                  <img src="./img/polansky.jpg" alt="steve polansky outside building" class="home__card-img">    
+                  <h3 class="home__card-title">
+                     <div class="cityName">Amherst</div>
+                      <div class="business">
+                          Steve Polansky Market
+                      </div>
+                      <div class="icons">
+                          <a href="http://maps.google.com/?q=6703 S Dewey Rd, Amherst, OH 44001" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
+                          <a href="tel:4409882617"><img src="./img/phone_icon.png" class="phone_icon"></a>
+                      </div>
+                  </h3>
+              </article>
+            </div>
+         </li>
+
+         <li><a href="#">Archbold</a>
+            <div class="cardsFlex">
+               <article class="home__card">
+                  
+                  <img src="./img/brookview.jpg" alt="brookview outside building" class="home__card-img">    
+                  <h3 class="home__card-title">
+                     <div class="cityName">Archbold</div>
+                      <div class="business">
+                          Brookview Farm Meats
+                      </div>
+                      <div class="icons">
+                          <a href="http://maps.google.com/?q=V-354 Co Rd 24, Archbold, OH 43502" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
+                          <a href="tel:4194456366"><img src="./img/phone_icon.png" class="phone_icon"></a>
+                      </div>
+                  </h3>
+              </article>
+            </div>
+         </li>
+
+         <li><a href="#">Archbold</a>
+            <div class="cardsFlex">
+               <article class="home__card">
+                  <img src="./img/butcher-shop-cartoon.jpg" alt="brookview outside building" class="home__card-img">    
+                  <h3 class="home__card-title">
+                     <div class="cityName">Archbold</div>
+                      <div class="business">
+                          Myers Slaughter House
+                      </div>
+                      <div class="icons">
+                          <a href="http://maps.google.com/?q=21905 Co Rd C, Archbold, OH 43502" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
+                          <a href="tel:4194454436"><img src="./img/phone_icon.png" class="phone_icon"></a>
+                      </div>
+                  </h3>
+              </article>
+            </div>
+         </li>
+
+         <li><a href="#">Ashland</a>
+            <div class="cardsFlex">
+               <article class="home__card">
+                  <img src="./img/gerwigs.jpg" alt="gerwigs outside building" class="home__card-img">    
+                  <h3 class="home__card-title">
+                     <div class="cityName">Ashland</div>
+                      <div class="business">
+                          Gerwig's White Barn
+                      </div>
+                      <div class="icons">
+                          <a href="http://maps.google.com/?q= 853 Township Rd 1102, Ashland, OH 44805" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
+                          <a href="tel:4192899576"><img src="./img/phone_icon.png" class="phone_icon"></a>
+                      </div>
+                  </h3>
+              </article>
+            </div>
+         </li>
+
+         <li><a href="#">Ashland</a>
+            <div class="cardsFlex">
+               <article class="home__card">
+                  <img src="./img/heffelfingers.png" alt="Heffelfinger's outside building" class="home__card-img">    
+                  <h3 class="home__card-title">
+                     <div class="cityName">Ashland</div>
+                      <div class="business">
+                          Heffelfinger's Meat Market
+                      </div>
+                      <div class="icons">
+                          <a href="http://maps.google.com/?q=1110 Commerce Parkway, Ashland, OH 44805" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
+                          <a href="tel:4194960988"><img src="./img/phone_icon.png" class="phone_icon"></a>
+                      </div>
+                  </h3>
+              </article>
+            </div>
+         </li>
+
+         <li><a href="#">Ashland</a>
+            <div class="cardsFlex">
+               <article class="home__card">
+                  <img src="./img/turk.jpg" alt="Heffelfinger's outside building" class="home__card-img">    
+                  <h3 class="home__card-title">
+                     <div class="cityName">Ashland</div>
+                      <div class="business">
+                          Turk Brothers Custom Meats Inc
+                      </div>
+                      <div class="icons">
+                          <a href="http://maps.google.com/?q=1903 Orange Rd, Ashland, OH 44805" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
+                          <a href="tel:4192891051"><img src="./img/phone_icon.png" class="phone_icon"></a>
+                      </div>
+                  </h3>
+              </article>
+            </div>
+         </li>
+
+         <li><a href="#">Aurora</a>
+            <div class="cardsFlex">
+               <article class="home__card">
+                  <img src="./img/theLocalButcher.jpg" alt="the local butcher outside building" class="home__card-img">    
+                  <h3 class="home__card-title">
+                     <div class="cityName">Aurora</div>
+                      <div class="business">
+                          The Local Butcher LLC
+                      </div>
+                      <div class="icons">
+                          <a href="http://maps.google.com/?q=2865 Pleasant Hill Rd, Athens, OH 45701" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
+                          <a href="tel:7405419995"><img src="./img/phone_icon.png" class="phone_icon"></a>
+                      </div>
+                  </h3>
+              </article>
+            </div>
+         </li>
+
+         <li><a href="#">Aurora</a>
+            <div class="cardsFlex">
+               <article class="home__card">
+                  <img src="./img/heinens.jpg" alt="Heinen's outside building" class="home__card-img">    
+                  <h3 class="home__card-title">
+                     <div class="cityName">Aurora</div>
+                      <div class="business">
+                          Heinen's Grocery Store
+                      </div>
+                      <div class="icons">
+                          <a href="http://maps.google.com/?q=115 N Chillicothe Rd, Aurora, OH 44202" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
+                          <a href="tel:3305625297"><img src="./img/phone_icon.png" class="phone_icon"></a>
+                      </div>
+                  </h3>
+              </article>
+            </div>
+         </li>
+
+         <li><a href="#">Aurora</a>
+            <div class="cardsFlex">
+               <article class="home__card">
+                  <img src="./img/mazzulos.jpg" alt="mazzulos outside building" class="home__card-img">    
+                  <h3 class="home__card-title">
+                     <div class="cityName">Aurora</div>
+                      <div class="business">
+                          Mazzulo's Market
+                      </div>
+                      <div class="icons">
+                          <a href="http://maps.google.com/?q=302 Aurora Commons Cir, Aurora, OH 44202" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
+                          <a href="tel:3305623200"><img src="./img/phone_icon.png" class="phone_icon"></a>
+                      </div>
+                  </h3>
+              </article>
+            </div>
+         </li>
+
+         <li><a href="#">Barberton</a>
+            <div class="cardsFlex">
+               <article class="home__card">
+                  <img src="./img/alsQualityMeats.jpg" alt="Heinen's outside building" class="home__card-img">    
+                  <h3 class="home__card-title">
+                     <div class="cityName">Barberton</div>
+                      <div class="business">
+                          Al's Quality Market
+                      </div>
+                      <div class="icons">
+                          <a href="http://maps.google.com/?q=155 2nd St NW, Barberton, OH 44203" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
+                          <a href="tel:3307537216"><img src="./img/phone_icon.png" class="phone_icon"></a>
+                      </div>
+                  </h3>
+              </article>
+            </div>
+         </li>
+
+         <li><a href="#">Barberton</a>
+            <div class="cardsFlex">
+               <article class="home__card">
+                  <img src="./img/shermans.jpg" alt="mazzulo's outside building" class="home__card-img">    
+                  <h3 class="home__card-title">
+                     <div class="cityName">Barberton</div>
+                      <div class="business">
+                          Sherman Provision
+                      </div>
+                      <div class="icons">
+                          <a href="http://maps.google.com/?q=3998 Johnson Rd, Barberton, OH 44203" target="_blank"><img src="./img/google-map-icon.png" class="map_icon"></a>
+                          <a href="tel:3308252711"><img src="./img/phone_icon.png" class="phone_icon"></a>
+                      </div>
+                  </h3>
+              </article>
+            </div>
+         </li>
+
         
-              
-        
-            </section>
 
-
-       
-
-        
-
-
-
-
+         
+           
 
 
         
+        
+
+      
+      </ul>
+
+    
 
 
-        <!--========== SCROLL UP ==========-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-line"></i>
-        </a>
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="../../js/scrollreveal.min.js"></script>
-        <!--=============== MAIN JS ===============-->
-        <script src="../../js/ohio.js"></script>
-        <script src="../../../../FindMyButcher2.2/assets/js/main.js"></script>
-    </body>
+
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="../../../assets/js/scrollreveal.min.js"></script>
+      <!--=============== MAIN JS ===============-->
+      <script src="../../js/ohio.js"></script>
+   </body>
 </html>

@@ -2,8 +2,10 @@
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
-/*===== MENU SHOW =====*/
+
+/**************************************MENU SHOW *************************************/
 /* Validate if constant exists */
+
 if(navToggle){
     navToggle.addEventListener('click', () =>{
         navMenu.classList.add('show-menu')
@@ -60,7 +62,9 @@ const scrollActive = () =>{
 	})
 }
 window.addEventListener('scroll', scrollActive)
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+
+
+/********************************************************* SCROLL REVEAL ANIMATION *************************/
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
@@ -68,50 +72,17 @@ const sr = ScrollReveal({
     delay: 400,
     // reset: true // Animations repeat
 })
+
+/* Scroll Reveal*/
+
 sr.reveal(`.home__data, .explore__data, .explore__user, .footer__container`)
 sr.reveal(`.home__card`, {delay: 600, distance: '100px', interval: 100})
 sr.reveal(`.about__data, .join__image`, {origin: 'right'})
 sr.reveal(`.about__image, .join__data`, {origin: 'left'})
 sr.reveal(`.popular__card`, {interval: 200})
-const wrapper = document.querySelector(".wrapper"); 
-const selectBtn = wrapper.querySelector(".select-btn"); 
-const searchInp = wrapper.querySelector("input"); 
-const options = wrapper.querySelector(".options");  
-let countries = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado",                  
-"Connecticut", "Delaware", "Distric of Columbia", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois",                  
-"Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts",                  
-"Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",                  
-"New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon",                  
-"Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont","Virginia",
-"Washington", "West Virginia","Wisconsin", "Wyoming"];  
 
- 
-let countryLinks = {   "Ohio": "#" };  
 
-function addCountry(selectedCountry = null) {     options.innerHTML = "";     
 
-countries.forEach(country => {         
-    let isSelected = country === selectedCountry ? "selected" : "";         
-    let countryLink = countryLinks[country];         
-    let li = `<li onclick="updateName(this); window.location='${countryLink}'" class="${isSelected}">${country}</li>`;         
-    
-    options.insertAdjacentHTML("beforeend", li);     }); }  addCountry();  
-    function updateName(selectedLi) {     searchInp.value = "";     addCountry(selectedLi.innerText);     
-    
-    wrapper.classList.remove("active");     
-    selectBtn.firstElementChild.innerText = selectedLi.innerText;     
-    window.location = countryLinks[selectedLi.innerText]; }  
-    searchInp.addEventListener("keyup", () => {     let arr = [];     
-    
-    let searchWord = searchInp.value.toLowerCase();     
-        
-    arr = countries.filter(data => {         return data.toLowerCase().startsWith(searchWord);     }).map(data => 
-        {         let isSelected = data === selectBtn.firstElementChild.innerText ? "selected" : "";         
-        let countryLink = countryLinks[data];         
-        return `<li onclick="updateName(this); window.location='${countryLink}'" class="${isSelected}">${data}</li>`;     }).join("");     
-        options.innerHTML = arr ? arr : '<p style="margin-top: 10px;">Oops! State not found</p>'; });  
-        
-        selectBtn.addEventListener("click", () => wrapper.classList.toggle("active"));
         
 /*cards*/
 const observer = new IntersectionObserver((entries) =>  {
@@ -127,30 +98,3 @@ const observer = new IntersectionObserver((entries) =>  {
 })
 const hiddenElements = document.querySelectorAll('.card');
 hiddenElements.forEach((el) => observer.observe (el));
-
-
-
-/*search filter */
-
-// search filter 
-
-function myFunction() {
-    // Declare variables
-    let input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById('myInput');
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName('li');
-  
-    // Loop through all list items, and hide those who don't match the search query
-
-    for (i = 0; i < li.length; i++) {
-      a = li[i].getElementsByTagName("a")[0];
-      txtValue = a.textContent || a.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        li[i].style.display = "";
-      } else {
-        li[i].style.display = "none";
-      }
-    }
-}

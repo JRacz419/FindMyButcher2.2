@@ -1,157 +1,71 @@
 
 
-main {
-  
-    background-color: black;
-    margin-top: 8rem;
+body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    border: 1px solid hotpink;
-
+    justify-content: center;
 
 }
 
 
-/*******************************************************SEARCH*****************************************************/
 
-.search-container {
-    border: 1px solid greenyellow;
+#myUL {
+    width:84em;
     margin-top: 12em;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
- 
-.search-bar {
-    border: 2px solid red;
-    width: 370px;
-    height:50px;
-    background: rgb(31, 31, 31);
-    display:flex;
-    align-items: center;
-    border-radius: 16px;
-    padding: 20px;
-    color: white;
-    opacity: 0.8;
-  }
-  
-  .search-bar input {
-    background:transparent;
-    flex: 1;
-    border: 0;
-    outline:none;
-    padding: 24px 20px;
-    font-size: 20px;
-    color: white;
-    opacity: 0.8;
-  }
- 
-  #main-search-button {
-    margin-top: 20px;
-  }
-
-
-
-@media screen and (max-width: 930px) {
-    .search-bar {
-        border: 2px solid red;
-        width: 300px;
-        height:50px;
-        background: rgb(31, 31, 31);
-        display:flex;
-        align-items: center;
-        border-radius: 16px;
-        padding: 20px;
-        margin-top: 20px;
-        color: white;
-        opacity: 0.8;
-      }
-  }
-
-   /*************************************************************TEST*********************************************************/ 
-
-  .main-directory-container {
-    display: flex;
-    width: 100%;
-    border: 1px solid red;
+    flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-  }
 
-  #myUL {
-    margin-top: 6rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    flex-wrap: wrap;
-    align-content: center;
-    gap: 10px;
+
 }
 
 #myUL li a {
-    color: white;
+    color: black;
     writing-mode: vertical-lr;
     text-orientation: mixed;
     background: transparent;
-
+    font-size: 1px;
 
 }
 
+/******************************CARDS*********************************/
 
-
-
-/*featured responsive business cards section*/
-
-
-.home__card {
+.cardsFlex {
     display: flex;
-    flex-direction: column;
-}
-
-.phone_icon {
-    padding: 12px;
-    background-color: transparent;
-
-}
-
-
-.home__card-title {
-    margin-top: 30px;
-    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 250px;
     flex-direction: column;
 
-    color: white;
-    width: 100%;
+
 }
 
-.map_icon{
-    padding: 15px;
-}
+.cityName {
+    padding: 10px;
 
+    text-align: center;
+    font-size: 14px;
+    width: 80px;
+
+}
 
 .home__card-img {
-    opacity: 0.7;
+    opacity: 0.62;
     border-radius: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 .icons {
     display: flex;
     flex-direction: row;
+    margin-top: 1em;
 }
 
+.ohioContainer {
+    height: 400px;
+    background-color: beige;
+}
 
+/**************************************************TEST*******************************************/
 
-
-/*  <div class="main-search-container">
-
-            <h2>
-                Find Local<br><span class="red-meat-text">BUTCHERS</span><span>
-            </h2>
-                
-            <form action="#" methods="get" class="search-bar">
-                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by City">
-            </form>
-
-        </div>                                         */

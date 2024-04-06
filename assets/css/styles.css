@@ -104,7 +104,7 @@ img {
   height: auto;
 }
 
-/*REUSABLE CSS CLASSES*/
+/**************************REUSABLE CSS CLASSES******************************/
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;
@@ -126,7 +126,7 @@ img {
 }
 
 .main {
-  overflow: hidden; /* scrollReveal */
+  overflow: hidden; /***********************************scrollReveal***********************/
 }
 
 /*HEADER & NAV */
