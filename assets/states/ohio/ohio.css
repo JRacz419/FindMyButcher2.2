@@ -1,8 +1,11 @@
 
-
 body {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
+
 
 }
 
@@ -10,13 +13,11 @@ body {
 
 #myUL {
     width:84em;
-    margin-top: 12em;
+    margin-top: 10em;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
-
 }
 
 #myUL li a {
@@ -50,7 +51,7 @@ body {
 }
 
 .home__card-img {
-    opacity: 0.62;
+    opacity: 0.67;
     border-radius: 10px;
     width: 100%;
     height: 100%;
@@ -60,12 +61,20 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: 1em;
+    filter: brightness(125%);
+    justify-content: space-evenly;
+    width: 100%;
+
 }
 
-.ohioContainer {
-    height: 400px;
-    background-color: beige;
+.homeCardTitle {
+    width: 100%;
 }
+
+
 
 /**************************************************TEST*******************************************/
 
+h4 {
+    color: white;
+}
