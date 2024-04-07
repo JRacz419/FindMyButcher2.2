@@ -83,6 +83,7 @@ sr.reveal(`.popular__card`, {interval: 200})
 
 
 
+
         
 /*cards*/
 const observer = new IntersectionObserver((entries) =>  {
@@ -109,3 +110,28 @@ let inputBox = document.querySelector(".input-box"),
                 closeIcon = document.querySelector(".close-icon");
             searchIcon.addEventListener("click", () => inputBox.classList.add("open"));
             closeIcon.addEventListener("click", () => inputBox.classList.remove("open"));
+
+/*************************FILTER SEARCH */
+
+// search filter 
+
+function myFunction() {
+    // Declare variables
+    let input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+  
+    // Loop through all list items, and hide those who don't match the search query
+
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+}
