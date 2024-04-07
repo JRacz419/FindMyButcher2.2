@@ -98,3 +98,14 @@ const observer = new IntersectionObserver((entries) =>  {
 })
 const hiddenElements = document.querySelectorAll('.card');
 hiddenElements.forEach((el) => observer.observe (el));
+
+
+
+
+/*************TEST******************/
+
+let inputBox = document.querySelector(".input-box"),
+                searchIcon = document.querySelector(".icon"),
+                closeIcon = document.querySelector(".close-icon");
+            searchIcon.addEventListener("click", () => inputBox.classList.add("open"));
+            closeIcon.addEventListener("click", () => inputBox.classList.remove("open"));
