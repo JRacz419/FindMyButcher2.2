@@ -1,4 +1,5 @@
 
+
 body {
     display: flex;
     flex-wrap: wrap;
@@ -18,6 +19,17 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+@media (max-width: 930px) {
+  #myUL {
+    width:20em;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 }
 
 #myUL li a {
@@ -149,4 +161,32 @@ h4 {
   }
 
 /********************************************TEST************************************/
+
+.paginationList {
+  width: 375px;
+  height: 300px;
+  background: black;
+  border-radius: 15px;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+@media (max-width: 400px) {
+  .paginationList {
+    width: 300px;
+    height: 300px;
+    background: black;
+    border-radius: 15px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    overflow-y: scroll;
+  }
+  
+}
+
+.paginationList::-webkit-scrollbar {
+  color: grey;
+}
+
 

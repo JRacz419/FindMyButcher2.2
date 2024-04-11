@@ -65,24 +65,6 @@ window.addEventListener('scroll', scrollActive)
 
 
 /********************************************************* SCROLL REVEAL ANIMATION *************************/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 3000,
-    delay: 400,
-    // reset: true // Animations repeat
-})
-
-/* Scroll Reveal*/
-
-sr.reveal(`.home__data, .explore__data, .explore__user, .footer__container`)
-sr.reveal(`.home__card`, {delay: 600, distance: '100px', interval: 100})
-sr.reveal(`.about__data, .join__image`, {origin: 'right'})
-sr.reveal(`.about__image, .join__data`, {origin: 'left'})
-sr.reveal(`.popular__card`, {interval: 200})
-
-
-
 
         
 /*cards*/
@@ -101,9 +83,6 @@ const hiddenElements = document.querySelectorAll('.card');
 hiddenElements.forEach((el) => observer.observe (el));
 
 
-
-
-/*************TEST******************/
 
 let inputBox = document.querySelector(".input-box"),
                 searchIcon = document.querySelector(".icon"),
@@ -135,3 +114,25 @@ function myFunction() {
       }
     }
 }
+
+/***********************************************TEST***************************************************/
+
+
+const search = () => {
+  const searchbox = document.getElementById("myInput").value.toUpperCase();
+  const storeitems = document.getElementById("myUL");
+  const pname = storeitems.getElementsByTagName("h2"); // Search by h2 directly
+
+  for (var i = 0; i < pname.length; i++) {
+    let textvalue = pname[i].textContent || pname[i].innerHTML;
+
+    if (textvalue.toUpperCase().indexOf(searchbox) > -1) {
+      pname[i].style.display = "";
+    } else {
+      pname[i].style.display = "none";
+    }
+  }
+
+  // Show all list items initially
+  storeitems.style.display = "flex"; // Or use "flex" or "grid" depending on your layout
+};
