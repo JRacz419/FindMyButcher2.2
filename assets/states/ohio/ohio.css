@@ -168,12 +168,13 @@ h4 {
 /*pagination*/
 
 .paginationList {
+  
   width: 375px;
   height: 300px;
   background: black;
   border-radius: 15px;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
-  padding: 20px;
+ 
   overflow-y: scroll;
 }
 
