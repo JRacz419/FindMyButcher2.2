@@ -1,7 +1,7 @@
 /*************************************GOOGLE FONTS****************** */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@400;500&display=swap");
 
-/*VARIABLES CSS */
+/*VARIABLES CSS*/
 :root {
   --header-height: 3.5rem;
 
@@ -17,7 +17,7 @@
                     hsl(0, 0%, 0%) 125%);
 
   /*Font and text*/
-  /*.5rem = 8px | 1rem = 16px ...*/
+  /*.5rem = 8px | 1rem = 16px */
   --body-font: "Poppins", sans-serif;
   --second-font: "Montserrat", sans-serif;
   --biggest-font-size: 2.75rem;
@@ -51,7 +51,7 @@
   }
 }
 
-/*BASE */
+/*Base */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -104,7 +104,7 @@ img {
   height: auto;
 }
 
-/**************************REUSABLE CSS CLASSES******************************/
+/*REUSABLE CSS CLASSES*/
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;
@@ -119,14 +119,14 @@ img {
   padding-block: 5rem 1rem;
 }
 
-.section__title {
+.section__title {@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
   text-align: center;
   font-size: var(--h1-font-size);
   margin-bottom: 1.5rem;
 }
 
 .main {
-  overflow: hidden; /***********************************scrollReveal***********************/
+  overflow: hidden; 
 }
 
 /*HEADER & NAV */
@@ -160,7 +160,7 @@ img {
   cursor: pointer;
 }
 
-/* Nav for mobile devices */
+/* Nav for mobile */
 @media screen and (max-width: 1023px) {
   .nav__menu {
     position: fixed;
@@ -217,7 +217,7 @@ img {
   top: 0;
 }
 
-/* Add blur to header */
+/* Blur to header */
 .blur-header::after {
   content: "";
   position: absolute;
