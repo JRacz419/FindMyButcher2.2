@@ -1,5 +1,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
 
 /*VARIABLES CSS*/
 :root {
@@ -119,7 +120,7 @@ img {
   padding-block: 5rem 1rem;
 }
 
-.section__title {@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+.section__title {
   text-align: center;
   font-size: var(--h1-font-size);
   margin-bottom: 1.5rem;
