@@ -115,13 +115,13 @@ function myFunction() {
     }
 }
 
-/***********************************************TEST***************************************************/
+/*********************Search***********/
 
 
 const search = () => {
   const searchbox = document.getElementById("myInput").value.toUpperCase();
   const storeitems = document.getElementById("myUL");
-  const pname = storeitems.getElementsByTagName("h2"); // Search by h2 directly
+  const pname = storeitems.getElementsByTagName("h2"); 
 
   for (var i = 0; i < pname.length; i++) {
     let textvalue = pname[i].textContent || pname[i].innerHTML;
@@ -133,6 +133,17 @@ const search = () => {
     }
   }
 
-  // Show all list items initially
-  storeitems.style.display = "flex"; // Or use "flex" or "grid" depending on your layout
+
+  storeitems.style.display = "flex"; 
 };
+
+/*test*/
+
+const imageElements = document.querySelectorAll('.image');
+
+imageElements.forEach(image => {
+  image.addEventListener('click', () => {
+    // Toggle the 'active' class on click
+    image.classList.toggle('active');
+  });
+});

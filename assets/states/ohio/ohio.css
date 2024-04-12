@@ -94,6 +94,7 @@ body {
 
 h4 {
     color: white;
+    padding: 1em;
 }
 
 .input-box{
@@ -240,28 +241,30 @@ h4 {
 	color: #fff;
 	width: 100%;
 	height: 100%;
+  font-family: poppins;
 }
 .image .details h2{
 	text-align: center;
-	font-size: 35px;
+	font-size: 1.5em;
 	text-transform: uppercase;
-	font-weight: 300;
-	margin-top: 1em;
+	font-weight: 250;
+	margin-top: 1.8em;
 	transition: 0.4s;
 	transition-property: transform;
-  font-family: sans-serif;
-  color:white
+  font-family: poppins;
+
   
 }
 
-.image:click .details h2{
+.details h2{
 	transform: translateY(-30px);
+
 }
 
 .image:active .details p {
   margin: 30px 30px 0 30px;
 	font-size: 18px;
-	font-weight: 600;
+	font-weight: 300;
 	text-align: center;
 	opacity: 0;
 	transition: 0.6s;
@@ -277,6 +280,7 @@ h4 {
 	opacity: 0;
 	transition: 0.6s;
 	transition-property: opacity, transform;
+  font-family: Montserrat;
 }
 
 .image:hover .details p{
