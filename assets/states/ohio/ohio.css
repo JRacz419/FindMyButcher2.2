@@ -259,6 +259,15 @@ h4 {
 	transform: translateY(-30px);
 }
 
+.image:active .details p {
+  margin: 30px 30px 0 30px;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	opacity: 0;
+	transition: 0.6s;
+	transition-property: opacity, transform;
+}
 
 
 .image .details p{
@@ -340,3 +349,17 @@ h4 {
 	}
 }
 
+/*test*/
+
+.footer__title {
+  font-size: 30px;
+}
+
+.join_section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5em;
+  background-color: rgb(15, 15, 15);
+  width: 100%;
+  flex-wrap: wrap;
+}
