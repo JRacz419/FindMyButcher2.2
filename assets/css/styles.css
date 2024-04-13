@@ -148,7 +148,7 @@ img {
 }
 
 .nav__logo {
-  color: red;
+  color: white;
   font-family: var(--second-font);
   font-weight: var(--font-semi-bold);
 }
