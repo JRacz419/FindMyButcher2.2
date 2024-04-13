@@ -691,7 +691,7 @@ img {
 
 .footer__logo {
   display: inline-block;
-  color: red;
+  color: white;
   font-size: var(--h2-font-size);
   font-family: var(--second-font);
   font-weight: var(--font-semi-bold);
