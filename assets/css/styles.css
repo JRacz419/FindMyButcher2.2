@@ -237,6 +237,12 @@ img {
   width: 70%;
 }
 
+#signupBorder {
+  border: 1px solid red;
+  border-radius: 6px;
+  padding: 8px;
+}
+
 /* HOME */
 
 .home {
