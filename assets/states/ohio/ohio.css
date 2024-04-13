@@ -37,7 +37,7 @@ body {
     writing-mode: vertical-lr;
     text-orientation: mixed;
     background: transparent;
-    font-size: 1px;
+    font-size: .2px;
 
 }
 
@@ -51,8 +51,8 @@ body {
 .cardsFlex {
     display: flex;
     justify-content: center;
-    height: 250px;
-    width: 250px;
+    height: 280px;
+    width: 280px;
     flex-direction: column;
 
 
@@ -203,7 +203,6 @@ h4 {
 }
 
 /*test*/
-
 .row{
 	width: 100%;
 	display: flex;
@@ -352,10 +351,11 @@ h4 {
 	}
 }
 
-/*test*/
+
+/*signup*/
 
 .join__title {
-  font-size: 35px;
+  font-size: 28px;
 }
 
 .join_section {
@@ -369,3 +369,6 @@ h4 {
 .join__input {
   color: white;
 }
+
+/*about*/
+
