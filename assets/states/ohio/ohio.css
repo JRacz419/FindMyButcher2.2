@@ -170,8 +170,8 @@ h4 {
 
 .paginationList {
   
-  width: 375px;
-  height: 300px;
+  width: 70em;
+  height: 35em;
   background: black;
   border-radius: 15px;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
@@ -182,7 +182,7 @@ h4 {
 @media (max-width: 400px) {
   .paginationList {
     width: 300px;
-    height: 300px;
+    height: 360px;
     background: black;
     border-radius: 15px;
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
