@@ -54,6 +54,7 @@ body {
     height: 280px;
     width: 280px;
     flex-direction: column;
+    
 
 
 }
@@ -380,3 +381,4 @@ h4 {
   color: red;
   font-size: 22px;
 }
+
