@@ -588,7 +588,7 @@ img {
   font-size: var(--small-font-size);
   font-family: var(--second-font);
   font-weight: 500;
-  border: .5px solid red;
+  border: 1px solid red;
   border-radius: 16px;
   padding: 10px;
   color: white;
