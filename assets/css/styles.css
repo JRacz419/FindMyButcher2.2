@@ -526,6 +526,12 @@ img {
 }
 
 /*POPULAR */
+#popular {
+  background-color: var(--container-color);
+  border-top:  1px solid white;
+  border-bottom: 1px solid white;
+}
+
 .popular__container {
   padding-top: 1.5rem;
   grid-template-columns: 240px;
@@ -582,6 +588,7 @@ img {
 /*EXPLORE */
 .explore {
   position: relative;
+
 }
 
 .explore__image {
@@ -995,6 +1002,7 @@ img {
 
   .footer {
     padding-block: 5rem 3rem;
+    border-top: 1px solid white;
   }
   .footer__title {
     margin-bottom: 1.5rem;
