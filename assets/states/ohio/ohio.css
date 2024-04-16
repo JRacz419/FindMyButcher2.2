@@ -19,6 +19,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background-color: var(--container-color);
 }
 
 @media (max-width: 930px) {
