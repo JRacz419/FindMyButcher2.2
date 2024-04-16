@@ -99,7 +99,7 @@ h4 {
 }
 
 .input-box{
-    position: relative;
+  position: relative;
     height: 55px;
     max-width: 55px;
     width: 100%;
@@ -108,6 +108,7 @@ h4 {
     background-color: #fff;
     transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     cursor: pointer;
+    display: flex;
 
   }
   .input-box.open{
@@ -389,12 +390,14 @@ h4 {
 
   font-size: 70px;
   display: flex;
-  justify-content: center;
+justify-content: center;
 }
 
 #ohioHero h4 {
-text-align: center;
+  margin-top: 25px;
   padding: 0;
+  text-align: center;
+
 }
 
 #ohioHero .about__description {
