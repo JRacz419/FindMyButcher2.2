@@ -530,6 +530,7 @@ img {
   background-color: var(--container-color);
   border-top:  1px solid white;
   border-bottom: 1px solid white;
+  height: 60em;
 }
 
 .popular__container {
@@ -1003,6 +1004,7 @@ img {
   .footer {
     padding-block: 5rem 3rem;
     border-top: 1px solid white;
+
   }
   .footer__title {
     margin-bottom: 1.5rem;
