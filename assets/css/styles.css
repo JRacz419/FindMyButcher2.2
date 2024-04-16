@@ -537,6 +537,15 @@ img {
   height: 60em;
 }
 
+@media (max-width: 930px){
+  #popular {
+    background-color: var(--container-color);
+    border-top:  1px solid white;
+    border-bottom: 1px solid white;
+    height: 95em;
+  }
+}
+
 .popular__container {
   padding-top: 1.5rem;
   grid-template-columns: 240px;
