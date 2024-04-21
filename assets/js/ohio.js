@@ -137,7 +137,7 @@ const search = () => {
   storeitems.style.display = "flex"; 
 };
 
-/*test*/
+/*image click*/
 
 const imageElements = document.querySelectorAll('.image');
 

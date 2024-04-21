@@ -176,6 +176,10 @@ img {
   }
 }
 
+.nav-link {
+  color: white;
+}
+
 .nav__list {
   text-align: center;
   display: flex;
@@ -745,6 +749,15 @@ img {
 }
 
 .footer__link:hover {
+  color: var(--title-color);
+}
+
+.nav-link {
+  color: var(--text-color);
+  transition: color .4s;
+}
+
+.nav-link:hover {
   color: var(--title-color);
 }
 

@@ -47,6 +47,15 @@ body {
 
 }
 
+.nav-link {
+  color: var(--text-color);
+  transition: color .4s;
+}
+
+.nav-link:hover {
+  color: var(--title-color);
+}
+
 /******************************CARDS*********************************/
 
 .cardsFlex {
