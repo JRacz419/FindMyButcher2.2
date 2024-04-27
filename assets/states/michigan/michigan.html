@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+        <!--=============== FAVICON ===============-->
+        <link href="../../img/meatSpread.jpg" rel="shortcut icon" type="image/x-icon"> 
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet" >
+        <!--=============== CSS ===============-->      
+        <link rel="stylesheet" href="../../../assets/css/styles.css">
+
+        <link rel="stylesheet" href="./michigan.css">
+
+        <title>Find My Butcher</title>
+    </head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+           <a href="../../../index.html" class="nav__logo">FIND MY <span class="red">BUTCHER</span></a>
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="../../../index.html" class="nav__link active-link">Find a Butcher</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="#about" class="nav-link">Cuts</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="#popular" class="nav-link">Learn</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="#explore" class="nav-link">Explore</a>
+                 </li>
+                 <li class="nav__item">
+                     <a href="#explore" class="nav-link" >Login</a>
+                  </li>
+                 <li class="nav__item">
+                    <a href="#explore" class="nav-link" id="signupBorder">Signup</a>
+                 </li>
+              </ul>
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+           <!-- Toggle button -->
+           <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line"></i>
+           </div>
+        </nav>
+    </header>
+
+    <section class="about section" id="about">
+        <div class="about__container container grid" id="">
+           <div class="about__image">
+            <img src="./img/michiganOutline.jpg" alt="White outline of the state of Ohio on a black background." class="about__img">
+            <div class="about__shadow"></div>
+           </div>
+           <div class="aboutData" id="ohioHero">
+              <h2 class="ohio">
+                 MICHI<span class="red">GAN</span> <br>
+               
+              </h2>
+              <h4>Experience Michigan's Premier Butchers</h4>
+              <p class="about__description">
+                 Embark on a savory journey through the heart of Michigan, where the rich tradition
+                 of butchery meets the the vibrant pallete of local flavors. From bustling streets of Detroit 
+                 to towns like Traverse City. Michigan offers a diverse selection of butcher shops offering a feast 
+                 for meat enthusiasts.
+                  
+              </p>
+              <div class="input-box" id="iconBox">
+                 <input type="text" id="myInput"autocomplete="off" onkeyup="myFunction()" placeholder="Search by City...">
+                 <span class="icon">
+                     <i class="uil uil-search search-icon"></i>
+                 </span>
+                 <i class="uil uil-times close-icon"></i>
+             </div>
+           </div>
+           
+        </div>
+     </section>
+
+     <main class="stateContainer" id="stateContainer">
+        <ul id="myUL" class="paginationList" data-current-page="1" aria-live="polite">
+
+            <li id="list" class="list"><a href="#">Addison</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/mcauliffesMeats.jpg" alt="Outside picture of Mc Auliffe's Meats front building.">
+                     <div class="details">
+                       <h2>Addison</h2>
+                       <p>Mc Auliffe's Meats</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=9899 US-127, Addison, MI 49220" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:5175476706"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://mcauliffes-meats.club/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Adrian</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/monahansMeatMarket.jpg" alt="Outside picture of Monahan's Meat Market front building.">
+                     <div class="details">
+                       <h2>Adrian</h2>
+                       <p>Monahan's Meat Market</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=3369 N Adrian Hwy, Adrian, MI 49221" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:5179204100"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Ann Arbor</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/ribeye.jpg" alt="Outside picture of Golam Meat Market front building.">
+                     <div class="details">
+                       <h2>Ann Arbor</h2>
+                       <p>Golam Meat Market</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=3150 Packard St, Ann Arbor, MI 48108" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:7349738486"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Ann Arbor</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/knightsMarket.jpg" alt="Outside picture of Knight's Market front building.">
+                     <div class="details">
+                       <h2>Ann Arbor</h2>
+                       <p>Knight's Market</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=420 Miller Ave, Ann Arbor, MI 48103" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:7346656494"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://knightsrestaurants.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Ann Arbor</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/sparrowMeatMarket.jpg" alt="Outside picture of Sparrow Meat Market front building.">
+                     <div class="details">
+                       <h2>Ann Arbor</h2>
+                       <p>Sparrow Meat Market</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=407 N 5th Ave, Ann Arbor, MI 48104" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:7347618175"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://sparrowmeats.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Belleville</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/theButcherShop.jpg" alt="Outside picture of The Butcher Shop front building.">
+                     <div class="details">
+                       <h2>Belleville</h2>
+                       <p>The Butcher Shop</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=510 Main St, Belleville, MI 48111" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:7347962008"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://bellevillebutcher.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+            <li id="list" class="list"><a href="#">Dearborn</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/dearbornmeatmarket.jpg" alt="Outside picture of Dearborn Meat Market front building.">
+                     <div class="details">
+                       <h2>Dearborn</h2>
+                       <p>Dearborn Meat Market</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=7721 Schaefer Rd, Dearborn, MI 481263" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:3135818820"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Detroit</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/gratiotCentralMarket.jpg" alt="Outside picture of Gratiot Central Meat Market front building.">
+                     <div class="details">
+                       <h2>Detroit</h2>
+                       <p>Gratiot Central Meat Market</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=1429 Gratiot Ave # 107, Detroit, MI 48207" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:3132594486"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://easternmarket.org/district/gratiot-central-meat-market" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Milford</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/ribeye.jpg" alt="Image of ribeye replacing an image of the front building of the storefront.">
+                     <div class="details">
+                       <h2>Milford</h2>
+                       <p>Village Butcher Shoppes</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=130 Liberty St, Milford, MI 48381" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:2486846677"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="http://www.villagebutchershoppe.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Plymouth</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/plymouthPrimeMeats.jpg" alt="Outside picture of Plymouth Prime Meats front building.">
+                     <div class="details">
+                       <h2>Plymouth</h2>
+                       <p>Plymouth Prime Meats</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=614 S Main St, Plymouth, MI 48170" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:7349275500"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://www.plymouthprimemeats.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+     </main>
+<!-----------------------------------------------------------MAIN--------------------------------------------->
+
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+     </a>
+
+     <!--=============== SCROLLREVEAL ===============-->
+
+     <!--=============== MAIN JS ===============-->
+     <script src="../../js/ohio.js"></script>   
+</body>
+
+</html>
