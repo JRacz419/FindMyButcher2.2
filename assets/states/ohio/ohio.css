@@ -420,11 +420,13 @@ justify-content: center;
 h5 {
   margin-top: .5em;
   text-align: center;
-  font-size: 16px;
+  font-size: 10px;
+  font-weight: 300;
 }
 
 h5 a {
   color: red;
+  font-weight: 800;
 }
 
 /* select meat type */
