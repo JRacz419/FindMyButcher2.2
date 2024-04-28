@@ -56,49 +56,19 @@ body {
   color: var(--title-color);
 }
 
-/******************************CARDS*********************************/
-
-.cardsFlex {
-    display: flex;
-    justify-content: center;
-    height: 280px;
-    width: 280px;
-    flex-direction: column;
-    
-
+.about__description {
+  width: 300px;
 
 }
 
-.cityName {
-    padding: 10px;
 
-    text-align: center;
-    font-size: 14px;
-    width: 80px;
 
+.aboutData {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  align-items: center;
 }
-
-.home__card-img {
-    opacity: 0.85;
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-}
-
-.icons {
-    display: flex;
-    flex-direction: row;
-    margin-top: 1em;
-    filter: brightness(125%);
-    justify-content: space-evenly;
-    width: 100%;
-
-}
-
-.homeCardTitle {
-    width: 100%;
-}
-
 
 
 /************************************************Search***************************************/
@@ -449,4 +419,9 @@ p a:active,
 p a:hover,
 p a:visited {
   color: red;
+}
+
+.michigan {
+  text-align: center;
+  font-size: 50px;
 }
