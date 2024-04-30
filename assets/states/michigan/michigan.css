@@ -71,6 +71,10 @@ body {
   align-items: center;
 }
 
+#about {
+  border-bottom: white;
+}
+
 
 /************************************************Search***************************************/
 
@@ -422,3 +426,4 @@ p a:visited {
   text-align: center;
   font-size: 50px;
 }
+
