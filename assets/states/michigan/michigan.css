@@ -101,7 +101,8 @@ h4 {
     max-width: 240px;
   }
   input{
-    position: relative;size: 100% auto;
+    position: relative;
+    size: 100% auto;
     outline: none;
     border: none;
     height: 100%;
