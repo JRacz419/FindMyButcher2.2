@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+        <!--=============== FAVICON ===============-->
+        <link href="../../img/meatSpread.jpg" rel="shortcut icon" type="image/x-icon"> 
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet" >
+        <!--=============== CSS ===============-->      
+        <link rel="stylesheet" href="../../../assets/css/styles.css">
+        <link rel="stylesheet" href="./kentucky.css">
+        <title>Find My Butcher: Kentucky</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+           <a href="../../../index.html" class="nav__logo">FIND MY <span class="red">BUTCHER</span></a>
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="../../../index.html" class="nav__link active-link">Find a Butcher</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="#about" class="nav-link">Cuts</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="#popular" class="nav-link">Learn</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="#explore" class="nav-link">Explore</a>
+                 </li>
+                 <li class="nav__item">
+                     <a href="#explore" class="nav-link" >Login</a>
+                  </li>
+                 <li class="nav__item">
+                    <a href="#explore" class="nav-link" id="signupBorder">Signup</a>
+                 </li>
+              </ul>
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+           <!-- Toggle button -->
+           <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line"></i>
+           </div>
+        </nav>
+    </header>
+
+    <section class="about section" id="about">
+        <div class="about__container container grid" id="">
+           <div class="about__image">
+            <img src="./img/kentuckyOutline.png" alt="Kentucky Outline " alt="White outline of the state of Ohio on a black background." class="about__img">
+            <div class="about__shadow"></div>
+           </div>
+           <div class="aboutData" id="michiganHero">
+              <h2 class="michigan">
+                KENT<span class="red">UCKY</span> <br>
+               
+              </h2>
+              <h4>Discover Kentucky's Top Rated Butchers</h4>
+              <p class="about__description"> 
+                Traverse the "Bluegrass State" rich butchery scene, from Louisville's vibrant markets to Lexington's artisanal counters. 
+                Discover Kentucky's commitment to quality meats, where every cut reflects the local heritage and flavors beloved by meat aficionados.           
+              </p>
+              <div class="input-box" id="iconBox">
+                 <input type="text" id="myInput"autocomplete="off" onkeyup="myFunction()" placeholder="Search by City...">
+                 <span class="icon">
+                     <i class="uil uil-search search-icon"></i>
+                 </span>
+                 <i class="uil uil-times close-icon"></i>
+             </div>
+           </div>
+           
+        </div> 
+     </section>
+
+     <main class="stateContainer" id="stateContainer">
+        <ul id="myUL" class="paginationList" data-current-page="1" aria-live="polite">
+
+            <li id="list" class="list"><a href="#">Ashland</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/whitesCustomMeats.jpg" alt="Outside picture of White's Custom Meats front building.">
+                     <div class="details">
+                       <h2>Ashland</h2>
+                       <p>White's Custom Meats</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=2004 6th St, Ashland, KY 41101" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:6063251188"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://www.facebook.com/people/Whites-Meat-Market/100063528524042/?paipv=0&eav=AfahaEPYGSv9SwQ4V_M2zDRlQqSWQU9sJo92EjG772eBt0r9Z0KxSEcfp2Snf9UD1Hs" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Bardstown</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/boonesButcherShop.jpg" alt="Outside picture of Boone's Butcher Shop front building.">
+                     <div class="details">
+                       <h2>Bardstown</h2>
+                       <p>Boone's Butcher Shop</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=100 Old Bloomfield Pike, Bardstown, KY 40004" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:5023483668"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://boonesbutchershop.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Central City</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/farmsteadButcherBlock.png" alt="Outside picture of Farmstead Butcher Block LLC front building.">
+                     <div class="details">
+                       <h2>Central City</h2>
+                       <p>Farmstead Butcher Block LLC</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=3060 Cleaton Rd, Central City, KY 42330" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:2702004224"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://mmmbutcherblock.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Crestwood</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/crestwoodMeats.jpg" alt="Outside picture of Crestwood Meats front building.">
+                     <div class="details">
+                       <h2>Crestwood</h2>
+                       <p>Crestwood Meats</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=6554 KY-146, Crestwood, KY 40014" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:5022439933"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="http://www.crestwoodmeats.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Lexington</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/critchfieldMeats.jpg" alt="Outside picture of Critchfield Meats Family Market front building.">
+                     <div class="details">
+                       <h2>Lexington</h2>
+                       <p>Critchfield Meats Family Market</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=398 Southland Dr, Lexington, KY 40503" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:8592764965"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://www.critchfieldmeats.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Loretto</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/lorettoButcherShop.jpg" alt="Outside picture of Loretto Butcher Shop front building.">
+                     <div class="details">
+                       <h2>Loretto</h2>
+                       <p>Loretto Butcher Shop</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=700 Spencer Hamilton Rd, Loretto, KY 40037" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:2708655945"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://lorettobutchershop.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Louisville</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/franksMeatAndProduce.jpg" alt="Outside picture of Frank's Meat & Produce front building.">
+                     <div class="details">
+                       <h2>Louisville</h2>
+                       <p>Frank's Meat & Produce</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=3342 Preston Hwy, Louisville, KY 40213" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:5023633989"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://franksmeatsandproduce.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Taylorsville</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/taylorsvilleButcherBlock.jpg" alt="Outside picture of Taylorsville Butcher Block front building.">
+                     <div class="details">
+                       <h2>Taylorsville</h2>
+                       <p>Taylorsville Butcher Block</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=226 Taylorsville Rd, Taylorsville, KY 40071" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:5023540168"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://www.facebook.com/taylorsvillebutcherblock/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Walton</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/brooksMeats.jpg" alt="Outside picture of Brook's Meats front building.">
+                     <div class="details">
+                       <h2>Walton</h2>
+                       <p>Brook's Meats</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=106 N Main St, Walton, KY 41094" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:8594857104"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Windsor</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/showaltersCountrysMeats.jpg" alt="Outside picture of Showalter's Country Meats LLC front building.">
+                     <div class="details">
+                       <h2>Windsor</h2>
+                       <p>Showalter's Country Meats LLC</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=2301 Sloan Fork Rd, Windsor, KY 42565" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:6067877070"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://showalterscountrymeats.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+     </main>
+
+
+<!--==================== FOOTER ====================-->
+<footer class="footer" id="footer">
+    <div class="footer__container container grid">
+       <div class="footer__content grid">
+          <div>
+             <a href="#" class="footer__logo">FIND MY <span class="red">BUTCHER</span></a>
+             <p class="footer__description">
+                
+             </p>
+          </div>
+          <div class="footer__data grid">
+             <div>
+                <h3 class="footer__title">Butchers</h3>
+                <ul class="footer__links">
+                   <li>
+                      <a href="#" class="footer__link">Cuts</a>
+                   </li>
+                   <li>
+                      <a href="#" class="footer__link">Learn</a>
+                   </li>
+                   
+                   <li>
+                      <a href="#" class="footer__link">Explore</a>
+                   </li>
+                </ul>
+             </div>
+             <div>
+                <h3 class="footer__title">Company</h3>
+                <ul class="footer__links">
+                   <li>
+                      <a href="#" class="footer__link">Sitemap</a>
+                   </li>
+                   <li>
+                      <a href="#" class="footer__link">About</a>
+                   </li>
+                   <li>
+                      <a href="#" class="footer__link">Contact Us</a>
+                   </li>
+                </ul>
+             </div>
+             <div>
+                <h3 class="footer__title">Services</h3>
+                <ul class="footer__links">
+                   <li>
+                      <a href="#" class="footer__link">Get Listed</a>
+                   </li>
+                   <li>
+                      <a href="#" class="footer__link">Advertise</a>
+                   </li>
+                   <li>
+                      <a href="#" class="footer__link">Signup</a>
+                   </li>
+                </ul>
+             </div>
+             <div>
+                <h3 class="footer__title">Support</h3>
+                <ul class="footer__links">
+                   <li>
+                      <a href="#" class="footer__link">Privacy Policy</a>
+                   </li>
+                   <li>
+                      <a href="#" class="footer__link">Terms & Services</a>
+                   </li>
+                   <li>
+                      <a href="#" class="footer__link">FAQ</a>
+                   </li>
+                </ul>
+             </div>
+          </div>
+       </div>
+       <div class="footer__group">
+          <div class="footer__social">
+             <a href="https://www.linkedin.com/in/joshua-racz" target="_blank" class="footer__social-link">
+                <i class="ri-linkedin-line"></i>
+             </a>
+             <a href="#" target="_blank" class="footer__social-link">
+                <i class="ri-instagram-line"></i>
+             </a>
+             <a href="#" target="_blank" class="footer__social-link">
+                <i class="ri-twitter-line"></i>
+             </a>
+             <a href="#" target="_blank" class="footer__social-link">
+                <i class="ri-facebook-line"></i>
+             </a>
+          </div>
+          <span class="footer__copy">
+             &#169; Copyright Find My Butcher. All rights reserved
+          </span>
+       </div>
+    </div>
+ </footer>
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../../js/ohio.js"></script>   
+</body>
+</html>
