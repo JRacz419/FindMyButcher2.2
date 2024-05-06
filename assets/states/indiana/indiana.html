@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+        <!--=============== FAVICON ===============-->
+        <link href="../../img/meatSpread.jpg" rel="shortcut icon" type="image/x-icon"> 
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet" >
+        <!--=============== CSS ===============-->      
+        <link rel="stylesheet" href="../../../assets/css/styles.css">
+        <link rel="stylesheet" href="../indiana/indiana.css">
+        <title>Find My Butcher: Indiana</title>
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+           <a href="../../../index.html" class="nav__logo">FIND MY <span class="red">BUTCHER</span></a>
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="../../../index.html" class="nav__link active-link">Find a Butcher</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="#about" class="nav-link">Cuts</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="#popular" class="nav-link">Learn</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="#explore" class="nav-link">Explore</a>
+                 </li>
+                 <li class="nav__item">
+                     <a href="#explore" class="nav-link" >Login</a>
+                  </li>
+                 <li class="nav__item">
+                    <a href="#explore" class="nav-link" id="signupBorder">Signup</a>
+                 </li>
+              </ul>
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+           <!-- Toggle button -->
+           <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line"></i>
+           </div>
+        </nav>
+    </header>
+
+    <section class="about section" id="about">
+        <div class="about__container container grid" id="">
+           <div class="about__image">
+            <img src="../indiana/img/indianaOutline.jpg" alt="Kentucky Outline " alt="White outline of the state of Indiana on a black background." class="about__img">
+            <div class="about__shadow"></div>
+           </div>
+           <div class="aboutData" id="michiganHero">
+              <h2 class="michigan">
+                IND<span class="red">IANA</span> <br>
+               
+              </h2>
+              <h4>Discover Indiana's Top Rated Butchers</h4>
+              <p class="about__description"> 
+                From Indianapolis's bustling markets to Fort Wayne'ss artisanal displays, 
+                showcases a commitment to quality meats with a local flair. Experience the genuine character of Indiana through 
+                its diverse meat offerings, where each city invites you to savor the unique, locally-crafted delicacies.           
+              </p>
+              <div class="input-box" id="iconBox">
+                 <input type="text" id="myInput"autocomplete="off" onkeyup="myFunction()" placeholder="Search by City...">
+                 <span class="icon">
+                     <i class="uil uil-search search-icon"></i>
+                 </span>
+                 <i class="uil uil-times close-icon"></i>
+             </div>
+           </div>
+        </div> 
+    </section>
+
+    <main class="stateContainer" id="stateContain">
+        <ul id="myUL" class="paginationList" data-current-page="1" aria-live="polite">
+
+            <li id="list" class="list"><a href="#">Avon</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/meatCleaver.jpg" alt="Image of a meat clever, replacing an outside picture of Gold Cleaver Meat Market front building.">
+                     <div class="details">
+                       <h2>Avon</h2>
+                       <p>Gold Cleaver Meat Market</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=8100 E US Hwy 36 #5, Avon, IN 46123" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:3172716328"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://goldcleavermeatmarket.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Bloomington</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/theButchersBlock.jpg" alt="Outside picture of The Butcher's Block front building.">
+                     <div class="details">
+                       <h2>Bloomington</h2>
+                       <p>The Butcher's Block</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=115 S, IN-46 Suite E, Bloomington, IN 47408" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:8123366328"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://www.bloomingtonmeat.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Fishers</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/moodysButcherShopFisher.jpg" alt="Outside picture of Moody's Butcher Shop front building.">
+                     <div class="details">
+                       <h2>Fishers</h2>
+                       <p>Moody's Butcher Shop</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=10106 Brooks School Rd, Fishers, IN 46037" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:3175959282"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://www.moodysbutchershop.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Fremont</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/gwsButcherBlock.jpg" alt="Outside picture of GW's Butcher Block front building.">
+                     <div class="details">
+                       <h2>Fremont</h2>
+                       <p>GW's Butcher Block</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=115 S, IN-46 Suite E, Bloomington, IN 47408" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:5172782787"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Greenfield</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/davesMeatMarket.jpg" alt="Outside picture of Dave's Meat Market front building.">
+                     <div class="details">
+                       <h2>Greenfield</h2>
+                       <p>Dave's Meat Market</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=333 S State St, Greenfield, IN 46140" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:3174623799"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://daves-meat-market.edan.io/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Greensburg</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/hubersMeatMarket.jpg" alt="Outside picture of Huber's Meat Market front building.">
+                     <div class="details">
+                       <h2>Greensburg</h2>
+                       <p>Huber's Meat Market</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=1023 N Ireland St, Greensburg, IN 47240" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:8126637744"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://hubers-meat-market.edan.io/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Indianapolis</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/claus.jpg" alt="Outside picture of Claus' German Sausage & Meat front building.">
+                     <div class="details">
+                       <h2>Indianapolis</h2>
+                       <p>Claus' German Sausage & Meat</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=1845 Shelby St, Indianapolis, IN 46203" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:3176321963"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="http://www.clausgermansausageandmeats.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Indianapolis</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/donsButcherShop.jpg" alt="Outside picture of Don's Butcher Shop front building.">
+                     <div class="details">
+                       <h2>Indianapolis</h2>
+                       <p>Don's Butcher Shop</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=8028 S Emerson Ave, Indianapolis, IN 46237" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:3178518172"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://donsbutchershop.com" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Indianapolis</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/goosTheMarket.jpg" alt="Outside picture of Goose The Market front building.">
+                     <div class="details">
+                       <h2>Indianapolis</h2>
+                       <p>Goose The Market</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=2503 N Delaware St, Indianapolis, IN 462057" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:3179244944"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>                           
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Indianapolis</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/kincaidsMeatMarket.jpg" alt="Outside picture of Kincaid's Meat Market front building.">
+                     <div class="details">
+                       <h2>Indianapolis</h2>
+                       <p>Kincaid's Meat Market</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=5605 N Illinois St, Indianapolis, IN 46208" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:3172555497"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://kincaidsmeatmarket.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Indianapolis</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/moodysButcherShop.jpg" alt="Outside picture of Moody's Butcher Shop front building.">
+                     <div class="details">
+                       <h2>Indianapolis</h2>
+                       <p>Moody's Butcher Shop</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=1764 E 86th St, Indianapolis, IN 46240" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:3176690636"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://www.moodysbutchershop.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Indianapolis</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/theMeatShop.jpg" alt="Outside picture of The Meat Shop of Indianapolis front building.">
+                     <div class="details">
+                       <h2>Indianapolis</h2>
+                       <p>The Meat Shop of Indianapolis</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=1221 S High School Rd, Indianapolis, IN 46241" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:3174059504"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://the-meat-shop.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Lebanon</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/saintAdrian.jpg" alt="Outside picture of Saint Adrian Meats & Sausage front building.">
+                     <div class="details">
+                       <h2>Lebanon</h2>
+                       <p>Saint Adrian Meats & Sausage</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=110 W Washington St, Lebanon, IN 46052" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:7654812095"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://saintadrianmeats.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Mooresville</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/mooresvilleButcherShop.jpg" alt="Outside picture of Mooresville Butcher Shop front building.">
+                     <div class="details">
+                       <h2>Mooresville</h2>
+                       <p>Mooresville Butcher Shop</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=302 Bolton Ave, Mooresville, IN 46158" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:3178316453"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Mooresville</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/owensButcherBlock.jpg" alt="Outside picture of Owen's Butcher Block front building.">
+                     <div class="details">
+                       <h2>Mooresville</h2>
+                       <p>Owen's Butcher Block</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=10463 N Kitchen Rd, Mooresville, IN 46158" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:3174943095"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://owensbutcherblock.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Muncie</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/lahodyMeat.jpg" alt="Outside picture of Lahody Meats front building.">
+                     <div class="details">
+                       <h2>Muncie</h2>
+                       <p>Lahody Meats</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=1308 Wheeling Ave, Muncie, IN 47305" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:7652167240"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://www.lahodys.com/meat-counter" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li id="list" class="list"><a href="#">Pendleton</a>
+                <div class="row">
+                    <div class="image">
+                     <img src="./img/smithFamilyFarmsMarket.jpg" alt="Outside picture of Smith Family Farms Market front building.">
+                     <div class="details">
+                       <h2>Pendleton</h2>
+                       <p>Smith Family Farms Market</p>
+                        <div class="more">
+                         <a href="#" class="read-more">Read <span>More</span></a>
+                         <div class="icon-links">
+                            <a href="http://maps.google.com/?q=609 E State St, Pendleton, IN 46064" target="_blank"><img src="../ohio/img/google-map-icon.png" class="map_icon"></a>
+                            <a href="tel:7657781024"><img src="../ohio/img/phone_icon.png" class="phone_icon"></a>
+                            <a href="https://www.smithsthemarket.com/" target="_blank" ><img src="../ohio/img/globe2.png" class="phone_icon"></a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+        <h5>Can't find your butcher?<a href="#"> GET LISTED</a></h5>
+    </main>
+
+    <section class="about section" id="about">
+        <div class="about__container container grid">
+           <div class="about__data">
+              <h2 class="section__title">
+                 FOUND <br>
+                 YOUR <span class="red">BUTCHER?</span>
+              </h2>
+
+              <a href="#" class="button">
+                 Explore Cuts<i class="ri-arrow-right-line"></i>
+              </a>
+           </div>
+           <div class="about__image">
+              <img src="../../img/pigCowChicken.jpg" alt="Drawing with a white border of a chicken, cow and a pig." class="about__img">
+              <div class="about__shadow"></div>
+           </div>
+        </div>
+     </section>
+
+
+<!--==================== FOOTER ====================-->
+<footer class="footer" id="footer">
+    <div class="footer__container container grid">
+       <div class="footer__content grid">
+          <div>
+             <a href="#" class="footer__logo">FIND MY <span class="red">BUTCHER</span></a>
+             <p class="footer__description">
+                
+             </p>
+          </div>
+          <div class="footer__data grid">
+             <div>
+                <h3 class="footer__title">Butchers</h3>
+                <ul class="footer__links">
+                   <li>
+                      <a href="#" class="footer__link">Cuts</a>
+                   </li>
+                   <li>
+                      <a href="#" class="footer__link">Learn</a>
+                   </li>
+                   
+                   <li>
+                      <a href="#" class="footer__link">Explore</a>
+                   </li>
+                </ul>
+             </div>
+             <div>
+                <h3 class="footer__title">Company</h3>
+                <ul class="footer__links">
+                   <li>
+                      <a href="#" class="footer__link">Sitemap</a>
+                   </li>
+                   <li>
+                      <a href="#" class="footer__link">About</a>
+                   </li>
+                   <li>
+                      <a href="#" class="footer__link">Contact Us</a>
+                   </li>
+                </ul>
+             </div>
+             <div>
+                <h3 class="footer__title">Services</h3>
+                <ul class="footer__links">
+                   <li>
+                      <a href="#" class="footer__link">Get Listed</a>
+                   </li>
+                   <li>
+                      <a href="#" class="footer__link">Advertise</a>
+                   </li>
+                   <li>
+                      <a href="#" class="footer__link">Signup</a>
+                   </li>
+                </ul>
+             </div>
+             <div>
+                <h3 class="footer__title">Support</h3>
+                <ul class="footer__links">
+                   <li>
+                      <a href="#" class="footer__link">Privacy Policy</a>
+                   </li>
+                   <li>
+                      <a href="#" class="footer__link">Terms & Services</a>
+                   </li>
+                   <li>
+                      <a href="#" class="footer__link">FAQ</a>
+                   </li>
+                </ul>
+             </div>
+          </div>
+       </div>
+       <div class="footer__group">
+          <div class="footer__social">
+             <a href="https://www.linkedin.com/in/joshua-racz" target="_blank" class="footer__social-link">
+                <i class="ri-linkedin-line"></i>
+             </a>
+             <a href="#" target="_blank" class="footer__social-link">
+                <i class="ri-instagram-line"></i>
+             </a>
+             <a href="#" target="_blank" class="footer__social-link">
+                <i class="ri-twitter-line"></i>
+             </a>
+             <a href="#" target="_blank" class="footer__social-link">
+                <i class="ri-facebook-line"></i>
+             </a>
+          </div>
+          <span class="footer__copy">
+             &#169; Copyright Find My Butcher. All rights reserved
+          </span>
+       </div>
+    </div>
+ </footer>
+
+
+
+
+
+    <!--=============== MAIN JS ===============-->
+
+    <script src="../../js/ohio.js"></script>
+</body>
+</html>

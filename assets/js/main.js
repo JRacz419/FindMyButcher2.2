@@ -87,7 +87,7 @@ let countries = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colo
 
  
 let countryLinks = {   "Ohio": "./assets/states/ohio/ohio.html", "Michigan": "./assets/states/michigan/michigan.html",
-"Kentucky": "./assets/states/kentucky/kentucky.html",
+"Kentucky": "./assets/states/kentucky/kentucky.html", "Indiana": "./assets/states/indiana/indiana.html",
 };  
 
 function addCountry(selectedCountry = null) {     options.innerHTML = "";     

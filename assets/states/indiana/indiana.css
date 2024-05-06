@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@400;500&display=swap");
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+
+#myUL {
+    width:84em;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: var(--container-color);
+}
+
+@media (max-width: 930px) {
+  #myUL {
+    width:20em;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+}
+
+#myUL li a {
+    color: black;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    background: transparent;
+    font-size: .2px;
+
+}
+
+.section__title {
+  font-size: 72px;
+
+}
+
+.nav-link {
+  color: var(--text-color);
+  transition: color .4s;
+}
+
+.nav-link:hover {
+  color: var(--title-color);
+}
+
+.about__description {
+  width: 320px;
+  text-align: center;
+
+}
+
+
+
+.aboutData {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+#about {
+  border-bottom: white;
+}
+
+
+/************************************************Search***************************************/
+
+h4 {
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.input-box{
+  position: relative;
+    height: 55px;
+    max-width: 55px;
+    width: 100%;
+    margin: 0 40px;
+    border-radius: 6px;
+    background-color: #fff;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    cursor: pointer;
+    display: flex;
+
+  }
+  .input-box.open{
+    max-width: 240px;
+  }
+  input{
+    position: relative;
+    size: 100% auto;
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    background-color: #fff;
+  }
+  .input-box.open{
+    padding: 0 15px 0 65px;
+  }
+  .icon{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 60px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .search-icon,
+  .close-icon{
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .search-icon{
+    color: black;
+    
+    transform: translateY(-50%) rotate(90deg);
+  }
+  .input-box.open .search-icon{
+    transform: translateY(-50%) rotate(0);
+  }
+  .close-icon{
+    right: -45px;
+    color: #fff;
+    padding: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+  .input-box.open .close-icon{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+
+/*pagination*/
+
+.paginationList {
+  
+  width: 70em;
+  height: 35em;
+  background: black;
+  border-radius: 15px;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
+ 
+  overflow-y: scroll;
+}
+
+@media (max-width: 400px) {
+  .paginationList {
+    width: 300px;
+    height: 500px;
+    background: black;
+    border-radius: 15px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    overflow-y: scroll;
+  }
+  
+}
+
+.paginationList::-webkit-scrollbar {
+  color: grey;
+}
+
+
+.footer {
+  width: 100%;
+  margin-top: 8em;
+}
+
+/*test*/
+.row{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.image{
+	position: relative;
+	flex: 1;
+	width: 14em;
+	height: 14em;
+	margin: 20px;
+	overflow: hidden;
+  border-radius: 10px;
+}
+
+.image img{
+	opacity: 0.8;
+	position: relative;
+	vertical-align: top;
+	transition: 0.6s;
+	transition-property: opacity;
+}
+
+.image:hover img{
+	opacity: 1;
+}
+
+.image .details{
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+  font-family: poppins;
+}
+.image .details h2{
+	text-align: center;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 250;
+	margin-top: 1.8em;
+	transition: 0.4s;
+	transition-property: transform;
+  font-family: poppins;
+}
+
+.details h2{
+	transform: translateY(-30px);
+
+}
+
+.image:active .details p {
+  margin: 30px 30px 0 30px;
+	font-size: 18px;
+	font-weight: 300;
+	text-align: center;
+	opacity: 0;
+	transition: 0.6s;
+	transition-property: opacity, transform;
+}
+
+
+.image .details p{
+	margin: 30px 30px 0 30px;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	opacity: 0;
+	transition: 0.6s;
+	transition-property: opacity, transform;
+  font-family: Montserrat;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.image:hover .details p{
+	opacity: 1;
+	transform: translateY(-50px);
+ 
+  opacity: 0.7;
+  background-color: var(--container-color);
+}
+
+.more{
+	position: absolute;
+	background: transparent;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	bottom: -850px;
+	transition: 0.6s;
+	transition-property: bottom;
+}
+
+.image:hover .more{
+	bottom: 0;
+}
+
+.more .read-more{
+	color: #000;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.more .read-more span{
+	font-weight: 900;
+}
+
+.more .icon-links i{
+	color: #000;
+	font-size: 20px;
+  text-align: center;
+}
+
+.more .icon-links a:not(:last-child) i{
+	margin-right: 20px;
+}
+
+.icon-links {
+  width: 100%;
+  text-align: center;
+}
+
+/* Responsive CSS */
+
+@media (max-width: 1080px){
+	.image{
+		flex: 100%;
+		max-width: 480px;
+	}
+}
+
+@media (max-width: 400px){
+	.image .details p{
+		font-size: 16px;
+	}
+
+	.more .read-more, .more .icon-links a i{
+		font-size: 18px;
+	}
+}
+
+
+/*signup*/
+
+.join__title {
+  font-size: 18px;
+  padding: .2em;
+}
+
+.join_section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5em;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.join__input {
+  color: white;
+}
+
+
+#joinEmail {
+  margin-top: 2em;
+}
+
+.redLgFnt {
+  color: red;
+  font-size: 22px;
+}
+
+
+
+
+#ohioHero h4 {
+  margin-top: 25px;
+  padding: 0;
+  text-align: center;
+
+}
+
+#ohioHero .about__description {
+  text-align: center;
+  margin-top: 16px;
+}
+
+h5 {
+  margin-top: .5em;
+  text-align: center;
+  font-size: 16px;
+}
+
+h5 a {
+  color: red;
+}
+
+/* select meat type */
+
+.meatContainer {
+  height: 12em;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center
+}
+
+.meatContainer article {
+  font-size: 22px;
+  margin-top: 3em;
+  text-align: center;
+}
+
+p a:link,
+p a:active,
+p a:hover,
+p a:visited {
+  color: red;
+}
+
+.michigan {
+  text-align: center;
+  font-size: 50px;
+}
+
+h5 {
+  margin-top: .5em;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+h5 a {
+  color: red;
+  font-weight: 800;
+}
+
+/* meat banner */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 930px) {
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    width: 100%;
+  }
+}
+
+@media (max-width: 930px) {
+  .section__title {
+    font-size: 30px;
+    width: 8em;
+    margin-top: 2.2em;
+    color: white;
+    width: 100%;
+
+  }
+}
