@@ -83,7 +83,7 @@ let countries = [//"Alabama", "Alaska", "Arizona", "Arkansas", "California", "Co
     //"Connecticut", "Delaware", "Distric of Columbia", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois",                  
     "Indiana", /*"Iowa", "Kansas", */ "Kentucky", /*"Louisiana", "Maine", "Maryland", "Massachusetts", */
     "Michigan", // "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",                  
-/*"New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota",*/ "Ohio", //"Oklahoma", "Oregon",                  
+/*"New Jersey", "New Mexico",*/ "New York", /*"North Carolina", "North Dakota",*/ "Ohio", //"Oklahoma", "Oregon",                  
 //"Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont","Virginia",
 /*"Washington"*/, "West Virginia", /*"Wisconsin", "Wyoming"*/];
 
@@ -92,6 +92,7 @@ let countryLinks = {
     "Ohio": "./assets/states/ohio/ohio.html", "Michigan": "./assets/states/michigan/michigan.html",
     "Kentucky": "./assets/states/kentucky/kentucky.html", "Indiana": "./assets/states/indiana/indiana.html",
     "West Virginia": "./assets/states/westVirginia/westvirginia.html",
+    "New York": "./assets/states/newYork/newYork.html"
 };
 
 function addCountry(selectedCountry = null) {
